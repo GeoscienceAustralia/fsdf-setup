@@ -1,0 +1,7 @@
+#!/bin/bash
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+sudo yum install -y nodejs
+sudo yum install -y gcc-c++ make
+sudo yum install -y httpd
+sudo npm install -g forever 
+sudo npm install -g bower
