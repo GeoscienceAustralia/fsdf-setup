@@ -5,3 +5,26 @@ sudo yum install -y gcc-c++ make
 sudo yum install -y httpd
 sudo npm install -g forever 
 sudo npm install -g bower
+
+# Set up the system variables and cron jobs
+cd ~/fsdf-setup/tools
+node prepare_account.js
+
+# Get the apache configuration and turn on the HTTPD server
+echo "Downloading "
+cd ~
+git clone https://github.com/Tomella/apache-configuration.git
+bash apache-configuration/source/deploy
+sudo chkconfig httpd on
+
+# Let's get the Solr app running and loading the data
+source $HOME/fsdf-setup/tools/gazetteer
+
+# Load up elevation app.
+cd ~
+git clone https://github.com/Tomella/fsdf-elvis.git
+cd fsdf-elvis
+npm install
+bower install
+bash code-deploy/create_service
+cd ..

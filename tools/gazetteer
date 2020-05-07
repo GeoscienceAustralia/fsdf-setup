@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DIRECTORY=gazetteer
+
+if [ ! -d $DIRECTORY ]; then
+  echo "Fetching gazetteer project"
+  git clone https://github.com/Tomella/$DIRECTORY.git
+else
+  cd $DIRECTORY
+  git pull
+fi
+
+# Download
+cd $HOME/$DIRECTORY/deploy
+bash install
