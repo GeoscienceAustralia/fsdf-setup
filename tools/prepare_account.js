@@ -8,7 +8,7 @@ async function loader() {
     console.log("Finished updating .bash_profile");
 
     console.log("Updating crontab for jobs");
-    let response = await crontab(config.cronJobs);
+    response = await crontab(config.cronJobs);
     console.log("Finished updating crontab");
 }
 
