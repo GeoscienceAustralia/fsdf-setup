@@ -1,7 +1,6 @@
 #!/bin/bash
-
-DIRECTORY=gazetteer
-
+DIRECTORY=$HOME/gazetteer
+cd ~
 if [ ! -d $DIRECTORY ]; then
   echo "Fetching gazetteer project"
   git clone https://github.com/Tomella/$DIRECTORY.git
