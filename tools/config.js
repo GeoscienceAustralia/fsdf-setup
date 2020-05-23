@@ -20,46 +20,10 @@ module.exports = {
             description: "Used to check on recaptcha server side, it will be something like 1111234453g34gdfHFFDGFGF5444",
             key: "ELEVATION_RECAPTCHA_PRIVATE_KEY"
         },
-    
-        {
-            name: "PLACENAMES_DB_HOST",
-            description: "The gazetteer database host name",
-            key: "PLACENAMES_DB_HOST"
-        },
-        {
-            name: "PLACENAMES_DB_PORT",
-            description: "The port that the database listens on",
-            key: "PLACENAMES_DB_PORT"
-        },
-        {
-            name: "PLACENAMES_DB_DATABASE",
-            description: "The placenames gazetteer database name",
-            key: "PLACENAMES_DB_DATABASE"
-        },
-        {
-            name: "PLACENAMES_DB_USER",
-            description: "DB username to download from Postgres DB",
-            key: "PLACENAMES_DB_USER"
-        },
-        {
-            name: "PLACENAMES_DB_PASSWORD",
-            description: "DB password to match DB username to connect to database",
-            key: "PLACENAMES_DB_PASSWORD"   
-        },
         {
             name: "PLACENAMES_AWS_S3_BUCKET",
             description: "The S3 bucket name to upload Gazetteer data to",
             key: "PLACENAMES_AWS_S3_BUCKET"
-        },
-        {
-            name: "PLACENAMES_AWS_ACCESS_KEY_ID",
-            description: "Placenames AWS access key id, part of the convoluted handshaking to allow logging in to uploaders",
-            key: "PLACENAMES_AWS_ACCESS_KEY_ID"
-        },
-        {
-            name: "PLACENAMES_AWS_SECRET_ACCESS_KEY",
-            description: "Placenames AWS secret access, part of the convoluted handshaking to allow logging in to uploaders",
-            key: "PLACENAMES_AWS_SECRET_ACCESS_KEY"
         },
         {
             name: "PLACENAMES_AWS_COGNITO_LOGIN_URL",
@@ -75,16 +39,6 @@ module.exports = {
             name: "GOOGLE_KEY",
             description: "Used to allow access and billing to google services. It's provided by GA and requires key=45rge453tete format",
             key: "GOOGLE_KEY"
-        },
-        {
-            name: "DUMMY_KEY",
-            description: "Used to allow access and billing to google services. It's provided by GA and requires key=45rge453tete format",
-            key: "DUMMY_KEY"
-        },
-        {
-            name: "DUMMY2_KEY",
-            description: "Used to allow access and billing to google services. It's provided by GA and requires key=45rge453tete format",
-            key: "DUMMY2_KEY"
         }
     ],
 
